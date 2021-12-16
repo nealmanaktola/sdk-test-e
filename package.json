@@ -1,0 +1,8 @@
+{
+  "name": "sdk-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/nealmanaktola/sdk-test.git",
+  "author": "Neal Manaktola <neal.manaktola@discordapp.com>",
+  "license": "MIT"
+}
