@@ -14,5 +14,5 @@ jobs:
           git merge --allow-unrelated-histories --no-commit --strategy-option theirs upstream/master
           contents="$(jq '.name = "sdk-test-e" | .repository = "https://github.com/nealmanaktola/sdk-test-e.git"' package.json)" && echo "${contents}" > package.json
           git add package.json
-          git merge --continue --no-verify
+          git merge --no-verify --continue 
           git push
