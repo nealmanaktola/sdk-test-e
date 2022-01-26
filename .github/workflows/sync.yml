@@ -11,7 +11,7 @@ jobs:
           git fetch upstream
           git config --global user.name github.actions
           git config --global user.email github-actions@github.com
-          git merge --no-commit --strategy-option theirs upstream/master
+          git merge --allow-unrelated-histories --no-commit --strategy-option theirs upstream/master
           contents="$(jq '.name = "sdk-test-e" | .repository = "https://github.com/nealmanaktola/sdk-test-e.git"' package.json)" && echo "${contents}" > package.json
           git add package.json
           git merge --continue --no-verify
